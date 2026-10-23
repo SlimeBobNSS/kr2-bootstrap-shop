@@ -1,0 +1,102 @@
+
+:root {
+    --f1-red: #e10600;
+    --f1-dark: #15151e;
+    --f1-light: #f4f4f4;
+}
+
+body {
+    background-color: var(--f1-light);
+    color: var(--f1-dark);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: var(--f1-dark) !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ff3535 !important;
+}
+
+.hero {
+    min-height: 480px;
+    padding: 90px 0;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.72)),
+        url("../images/hero-bg.jpg") center / cover no-repeat;
+}
+
+.hero h1 {
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+}
+
+.btn-danger {
+    background-color: var(--f1-red);
+    border-color: var(--f1-red);
+}
+
+.btn-danger:hover {
+    background-color: #b30500;
+    border-color: #b30500;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    border-left: 4px solid var(--f1-red);
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+}
+
+.feature-card p {
+    margin-bottom: 0;
+}
+
+.card {
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card .badge {
+    background-color: var(--f1-red) !important;
+}
+
+.info-block {
+    background-color: #ffffff;
+    border-left: 5px solid var(--f1-red);
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--f1-dark) !important;
+}
+
+@media (max-width: 767px) {
+    .hero {
+        min-height: 360px;
+        padding: 65px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
