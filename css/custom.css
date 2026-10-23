@@ -76,10 +76,6 @@ body {
     font-weight: 700;
 }
 
-.card .badge {
-    background-color: var(--f1-red) !important;
-}
-
 .info-block {
     background-color: #ffffff;
     border-left: 5px solid var(--f1-red);
@@ -99,4 +95,58 @@ footer {
     .hero h1 {
         font-size: 2rem;
     }
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e10600;
+    color: #ffffff;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #e10600;
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 66px;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    background-color: var(--f1-dark) !important;
+}
+
+.navbar.fixed-top {
+    z-index: 1030;
+}
+
+.breadcrumb a {
+    color: #e10600;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: #b30500;
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #e10600;
 }
