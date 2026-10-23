@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="База пилотов и команд Формулы-1 — F1 Hub.">
+    <title>База данных — F1 Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🏁 F1 Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalog.html">База данных</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Болид RB22</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Билеты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container my-5">
+    <h1 class="fw-bold mb-3">База пилотов и команд</h1>
+    <p class="lead">Информация об участниках чемпионата Формулы-1.</p>
+
+<section class="my-5">
+    <h2 class="mb-4">Пилоты</h2>
+    <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <span class="badge bg-primary mb-3">Red Bull Racing</span>
+                    <h3 class="card-title h4">Макс Ферстаппен</h3>
+                    <p class="card-text">Нидерланды</p>
+                    <p class="card-text">Номер: 3</p>
+                    <a href="product.html" class="btn btn-danger">Болид команды</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <span class="badge bg-danger mb-3">Ferrari</span>
+                    <h3 class="card-title h4">Шарль Леклер</h3>
+                    <p class="card-text">Монако</p>
+                    <p class="card-text">Номер: 16</p>
+                    <button class="btn btn-outline-danger" type="button" data-bs-toggle="modal" data-bs-target="#databaseModal">Подробнее</button>
+                </div>
+            </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <span class="badge bg-info text-dark mb-3">Mercedes</span>
+                    <h3 class="card-title h4">Джордж Расселл</h3>
+                    <p class="card-text">Великобритания</p>
+                    <p class="card-text">Номер: 63</p>
+                    <button class="btn btn-outline-danger" type="button" data-bs-toggle="modal" data-bs-target="#databaseModal">Подробнее</button>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+    <section class="my-5">
+        <h2 class="mb-4">Команды</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h4">Red Bull Racing</h3>
+                        <p>Команда Формулы-1, выступающая с болидом RB22.</p>
+                        <a href="product.html" class="btn btn-danger">Посмотреть RB22</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h4">Scuderia Ferrari</h3>
+                        <p>Итальянская команда с многолетней историей участия в чемпионате.</p>
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#databaseModal">Информация</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h4">Mercedes-AMG</h3>
+                        <p>Заводская команда Mercedes в чемпионате Формулы-1.</p>
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#databaseModal">Информация</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="modal fade" id="databaseModal" tabindex="-1" aria-labelledby="databaseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-5" id="databaseModalLabel">F1 Hub</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                Подробная информация о выбранной команде или пилоте находится в процессе наполнения базы данных.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <p class="mb-0">&copy; 2026 F1 Drivers & Teams Database.</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
